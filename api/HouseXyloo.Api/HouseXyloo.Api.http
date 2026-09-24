@@ -1,0 +1,6 @@
+@HouseXyloo.Api_HostAddress = http://localhost:5008
+
+GET {{HouseXyloo.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
