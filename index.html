@@ -1,0 +1,1494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+
+  <meta
+    name="theme-color"
+    content="#08050d"
+  />
+
+  <meta
+    name="description"
+    content="Welcome to House Xyloo VIII."
+  />
+
+  <title>House Xyloo VIII</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+</head>
+
+
+<body>
+
+  <!-- ========================================
+       INTRO ANIMATION
+  ========================================= -->
+
+  <div
+    class="house-intro"
+    id="houseIntro"
+  >
+
+    <div class="intro-glow"></div>
+
+    <div class="intro-inner">
+
+      <div class="intro-roman">
+        VIII
+      </div>
+
+      <div class="intro-line"></div>
+
+      <div class="intro-name">
+        HOUSE XYLOO
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SITE NOISE OVERLAY -->
+
+  <div class="noise"></div>
+
+
+  <main>
+
+
+    <!-- ========================================
+         HERO
+    ========================================= -->
+
+    <section class="hero">
+
+      <img
+        class="hero-bg"
+        src="assets/xyloo-stage.jpg"
+        alt=""
+      />
+
+      <div class="hero-shade"></div>
+
+
+      <nav>
+
+        <div class="mark">
+          VIII
+        </div>
+
+        <div class="status">
+
+          <span></span>
+
+          HOUSE ONLINE
+
+        </div>
+
+      </nav>
+
+
+      <div class="hero-content">
+
+        <img
+          class="crest"
+          src="assets/house-xyloo-cover.png"
+          alt="House Xyloo VIII"
+        />
+
+
+        <!-- THIS CHANGES WITH THE TIME -->
+
+        <p
+          class="eyebrow"
+          id="timeEyebrow"
+        >
+          WELCOME TO
+        </p>
+
+
+        <h1>
+
+          HOUSE<br>
+
+          <em>XYLOO</em> VIII
+
+        </h1>
+
+
+        <!-- THIS ALSO CHANGES WITH THE TIME -->
+
+        <p class="intro">
+
+  <span id="timeGreeting">
+    Good music. Good people. Questionable sleep schedules.
+  </span>
+
+</p>
+
+
+<!-- HOUSE LOCAL TIME -->
+
+<div class="house-clock">
+
+  <div
+    class="clock-time"
+    id="houseTime"
+  >
+    00:00:00
+  </div>
+
+  <div
+    class="clock-date"
+    id="houseDate"
+  >
+    LOADING HOUSE TIME
+  </div>
+
+  <div class="clock-location">
+
+    <span class="clock-dot"></span>
+
+    HOUSE XYLOO · LOCAL TIME
+
+  </div>
+
+</div>
+
+
+<a
+  class="scroll"
+  href="#guest"
+>
+
+          ENTER THE HOUSE
+
+          <span>↓</span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         GUEST ACCESS
+    ========================================= -->
+
+    <section
+      id="guest"
+      class="section guest"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          GUEST ACCESS
+        </p>
+
+        <h2>
+
+          Make yourself<br>
+
+          <em>at home.</em>
+
+        </h2>
+
+      </div>
+
+
+
+      <div class="cards">
+
+
+        <!-- WIFI -->
+
+        <article class="card wifi-card">
+
+          <div class="card-top">
+
+            <span class="icon">
+              ⌁
+            </span>
+
+            <span class="pill">
+              WI-FI
+            </span>
+
+          </div>
+
+
+          <h3>
+            Get connected.
+          </h3>
+
+
+          <p class="muted">
+            Everything you need to get online.
+          </p>
+
+
+          <div class="wifi-row">
+
+            <div>
+
+              <small>
+                NETWORK
+              </small>
+
+              <strong id="wifiName">
+                Edwin-Guest-5G
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="wifi-row">
+
+            <div>
+
+              <small>
+                PASSWORD
+              </small>
+
+              <strong id="wifiPassword">
+                EddieHouse2@@3
+              </strong>
+
+            </div>
+
+
+            <button
+              onclick="copyWifi()"
+              id="copyBtn"
+            >
+              COPY
+            </button>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- PLAYLIST -->
+
+        <a
+          class="card playlist-card"
+          id="playlistLink"
+          href="https://music.apple.com/za/playlist/house-xyloo-viii-playlist/pl.u-LdbqEgdF2LjmGgJ"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div class="card-top">
+
+            <span class="icon">
+              ♫
+            </span>
+
+            <span class="pill">
+              HOUSE SOUND
+            </span>
+
+          </div>
+
+
+          <div class="album-wrap">
+
+            <img
+              src="assets/house-xyloo-cover.png"
+              alt="House Xyloo VIII playlist cover"
+            />
+
+            <span class="play">
+              ▶
+            </span>
+
+          </div>
+
+
+          <h3>
+            House Xyloo VIII
+          </h3>
+
+
+          <p class="muted">
+            The official soundtrack of the house.
+          </p>
+
+
+          <div class="open">
+
+            OPEN PLAYLIST
+
+            <span>↗</span>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         XYLOO ARCHIVES
+    ========================================= -->
+
+    <section class="section gallery-section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          THE XYLOO ARCHIVES
+        </p>
+
+        <h2>
+
+          Built for the<br>
+
+          <em>good nights.</em>
+
+        </h2>
+
+      </div>
+
+
+      <div class="gallery">
+
+  <figure
+    class="photo tall"
+    onclick="openArchive(0)"
+  >
+
+    <img
+      src="assets/xyloo-main.jpg"
+      alt="Xyloo at a gaming event"
+    />
+
+    <div class="photo-hover">
+      <span>VIEW PHOTO</span>
+      <span>↗</span>
+    </div>
+
+  </figure>
+
+
+  <figure
+    class="photo"
+    onclick="openArchive(1)"
+  >
+
+    <img
+      src="assets/xyloo-team.jpg"
+      alt="Gaming team at an event"
+    />
+
+    <div class="photo-hover">
+      <span>VIEW PHOTO</span>
+      <span>↗</span>
+    </div>
+
+  </figure>
+
+
+  <figure
+    class="photo"
+    onclick="openArchive(2)"
+  >
+
+    <img
+      src="assets/xyloo-play.jpg"
+      alt="Xyloo gaming"
+    />
+
+    <div class="photo-hover">
+      <span>VIEW PHOTO</span>
+      <span>↗</span>
+    </div>
+
+  </figure>
+
+</div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         HOUSE STATS
+    ========================================= -->
+
+    <section class="section stats-section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          HOUSE STATS
+        </p>
+
+        <h2>
+
+          By the<br>
+
+          <em>numbers.</em>
+
+        </h2>
+
+      </div>
+
+
+      <div class="stats-grid">
+
+
+        <div class="stat">
+
+          <span class="stat-number">
+            VIII
+          </span>
+
+          <span class="stat-label">
+            HOUSE NUMBER
+          </span>
+
+        </div>
+
+
+        <div class="stat">
+
+          <span class="stat-number">
+            2026
+          </span>
+
+          <span class="stat-label">
+            ESTABLISHED
+          </span>
+
+        </div>
+
+
+        <div class="stat">
+
+          <span class="stat-number">
+            24/7
+          </span>
+
+          <span class="stat-label">
+            HOUSE ONLINE
+          </span>
+
+        </div>
+
+
+        <div class="stat">
+
+          <span class="stat-number">
+            ∞
+          </span>
+
+          <span class="stat-label">
+            QUESTIONABLE DECISIONS
+          </span>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         SOCIALS
+    ========================================= -->
+
+    <section class="section socials-section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          FIND XYLOO
+        </p>
+
+        <h2>
+
+          Outside the<br>
+
+          <em>house.</em>
+
+        </h2>
+
+      </div>
+
+
+      <div class="social-grid">
+
+
+        <!-- TWITCH -->
+
+        <a
+          class="social-card"
+          href="https://www.twitch.tv/xyloo18"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div class="social-number">
+            01
+          </div>
+
+
+          <div>
+
+            <small>
+              LIVE &amp; VODS
+            </small>
+
+            <h3>
+              Twitch
+            </h3>
+
+            <p>
+              @xyloo18
+            </p>
+
+          </div>
+
+
+          <span class="social-arrow">
+            ↗
+          </span>
+
+        </a>
+
+
+
+        <!-- STEAM -->
+
+        <a
+          class="social-card"
+          href="https://steamcommunity.com/id/Xyloo18k/"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div class="social-number">
+            02
+          </div>
+
+
+          <div>
+
+            <small>
+              GAMING
+            </small>
+
+            <h3>
+              Steam
+            </h3>
+
+            <p>
+              Xyloo18k
+            </p>
+
+          </div>
+
+
+          <span class="social-arrow">
+            ↗
+          </span>
+
+        </a>
+
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+          class="social-card"
+          href="https://www.instagram.com/edwin.lec/"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div class="social-number">
+            03
+          </div>
+
+
+          <div>
+
+            <small>
+              LIFE OUTSIDE THE SERVER
+            </small>
+
+            <h3>
+              Instagram
+            </h3>
+
+            <p>
+              @edwin.lec
+            </p>
+
+          </div>
+
+
+          <span class="social-arrow">
+            ↗
+          </span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         CLOSING
+    ========================================= -->
+
+    <section class="closing">
+
+      <div class="roman">
+        VIII
+      </div>
+
+
+      <p class="eyebrow">
+        HOUSE XYLOO
+      </p>
+
+
+      <h2>
+        Stay awhile.
+      </h2>
+
+
+      <p class="muted">
+
+        You made it through the front door.<br>
+
+        You're basically family now.
+
+      </p>
+
+
+      <div class="line"></div>
+
+
+      <small>
+        EST. 2026 · HOUSE XYLOO VIII
+      </small>
+
+    </section>
+
+
+  </main>
+
+  <!-- ========================================
+     FULLSCREEN ARCHIVE VIEWER
+========================================= -->
+
+<div
+  class="archive-viewer"
+  id="archiveViewer"
+  aria-hidden="true"
+>
+
+  <!-- BLURRED BACKGROUND -->
+
+  <div
+    class="archive-backdrop"
+    id="archiveBackdrop"
+  ></div>
+
+
+  <!-- TOP BAR -->
+
+  <div class="archive-top">
+
+    <div class="archive-counter">
+
+      <span id="archiveCurrent">
+        01
+      </span>
+
+      <span class="archive-divider">
+        /
+      </span>
+
+      <span id="archiveTotal">
+        03
+      </span>
+
+    </div>
+
+
+    <button
+      class="archive-close"
+      onclick="closeArchive()"
+      aria-label="Close photo"
+    >
+      ×
+    </button>
+
+  </div>
+
+
+  <!-- PREVIOUS -->
+
+  <button
+    class="archive-arrow archive-prev"
+    onclick="previousArchive()"
+    aria-label="Previous photo"
+  >
+    ←
+  </button>
+
+
+  <!-- IMAGE -->
+
+  <div class="archive-image-wrap">
+
+    <img
+      id="archiveImage"
+      src=""
+      alt=""
+    />
+
+  </div>
+
+
+  <!-- NEXT -->
+
+  <button
+    class="archive-arrow archive-next"
+    onclick="nextArchive()"
+    aria-label="Next photo"
+  >
+    →
+  </button>
+
+
+  <!-- BOTTOM INFO -->
+
+  <div class="archive-info">
+
+    <p class="archive-label">
+      HOUSE XYLOO VIII
+    </p>
+
+    <h3>
+      THE XYLOO ARCHIVES
+    </h3>
+
+    <p id="archiveCaption">
+      Built for the good nights.
+    </p>
+
+  </div>
+
+</div>
+
+
+  <!-- ========================================
+       PASSWORD COPIED TOAST
+  ========================================= -->
+
+  <div
+    class="toast"
+    id="toast"
+  >
+    Password copied
+  </div>
+
+
+
+  <!-- ========================================
+       JAVASCRIPT
+  ========================================= -->
+
+  <script>
+
+
+    /* ========================================
+       COPY WI-FI PASSWORD
+    ========================================= */
+
+    function copyWifi() {
+
+      const value =
+        document
+          .getElementById('wifiPassword')
+          .textContent
+          .trim();
+
+
+      navigator.clipboard
+        .writeText(value)
+        .then(() => {
+
+          const toast =
+            document.getElementById('toast');
+
+          const btn =
+            document.getElementById('copyBtn');
+
+
+          toast.classList.add('show');
+
+          btn.textContent = 'COPIED';
+
+
+          setTimeout(() => {
+
+            toast.classList.remove('show');
+
+            btn.textContent = 'COPY';
+
+          }, 1800);
+
+        });
+
+    }
+
+    /* ========================================
+   XYLOO ARCHIVE VIEWER
+======================================== */
+
+const archivePhotos = [
+
+  {
+    src: 'assets/xyloo-main.jpg',
+    alt: 'Xyloo at a gaming event',
+    caption: 'Built for the good nights.'
+  },
+
+  {
+    src: 'assets/xyloo-team.jpg',
+    alt: 'Gaming team at an event',
+    caption: 'The team.'
+  },
+
+  {
+    src: 'assets/xyloo-play.jpg',
+    alt: 'Xyloo gaming',
+    caption: 'Locked in.'
+  }
+
+];
+
+
+let currentArchiveIndex = 0;
+
+let archiveTouchStartX = 0;
+
+let archiveTouchEndX = 0;
+
+
+
+function openArchive(index) {
+
+  currentArchiveIndex = index;
+
+  updateArchive();
+
+
+  const viewer =
+    document.getElementById('archiveViewer');
+
+
+  viewer.classList.add('active');
+
+  viewer.setAttribute(
+    'aria-hidden',
+    'false'
+  );
+
+
+  document.body.classList.add(
+    'archive-open'
+  );
+
+}
+
+
+
+function closeArchive() {
+
+  const viewer =
+    document.getElementById('archiveViewer');
+
+
+  viewer.classList.remove('active');
+
+  viewer.setAttribute(
+    'aria-hidden',
+    'true'
+  );
+
+
+  document.body.classList.remove(
+    'archive-open'
+  );
+
+}
+
+
+
+function updateArchive() {
+
+  const photo =
+    archivePhotos[currentArchiveIndex];
+
+
+  const image =
+    document.getElementById('archiveImage');
+
+
+  const backdrop =
+    document.getElementById('archiveBackdrop');
+
+
+  image.classList.remove(
+    'archive-image-visible'
+  );
+
+
+  setTimeout(() => {
+
+    image.src =
+      photo.src;
+
+    image.alt =
+      photo.alt;
+
+
+    document
+      .getElementById('archiveCaption')
+      .textContent =
+      photo.caption;
+
+
+    document
+      .getElementById('archiveCurrent')
+      .textContent =
+      String(
+        currentArchiveIndex + 1
+      ).padStart(2, '0');
+
+
+    document
+      .getElementById('archiveTotal')
+      .textContent =
+      String(
+        archivePhotos.length
+      ).padStart(2, '0');
+
+
+    backdrop.style.backgroundImage =
+      `url("${photo.src}")`;
+
+
+    image.classList.add(
+      'archive-image-visible'
+    );
+
+  }, 120);
+
+}
+
+
+
+function nextArchive() {
+
+  currentArchiveIndex =
+    (
+      currentArchiveIndex + 1
+    ) % archivePhotos.length;
+
+
+  updateArchive();
+
+}
+
+
+
+function previousArchive() {
+
+  currentArchiveIndex =
+    (
+      currentArchiveIndex - 1 +
+      archivePhotos.length
+    ) % archivePhotos.length;
+
+
+  updateArchive();
+
+}
+
+
+
+/* ========================================
+   KEYBOARD CONTROLS
+======================================== */
+
+document.addEventListener(
+  'keydown',
+  function (event) {
+
+    const viewer =
+      document.getElementById(
+        'archiveViewer'
+      );
+
+
+    if (
+      !viewer.classList.contains('active')
+    ) {
+      return;
+    }
+
+
+    if (event.key === 'Escape') {
+
+      closeArchive();
+
+    }
+
+
+    if (event.key === 'ArrowRight') {
+
+      nextArchive();
+
+    }
+
+
+    if (event.key === 'ArrowLeft') {
+
+      previousArchive();
+
+    }
+
+  }
+);
+
+
+
+/* ========================================
+   MOBILE SWIPE
+======================================== */
+
+const archiveViewer =
+  document.getElementById(
+    'archiveViewer'
+  );
+
+
+archiveViewer.addEventListener(
+  'touchstart',
+  function (event) {
+
+    archiveTouchStartX =
+      event.changedTouches[0].screenX;
+
+  },
+  {
+    passive: true
+  }
+);
+
+
+archiveViewer.addEventListener(
+  'touchend',
+  function (event) {
+
+    archiveTouchEndX =
+      event.changedTouches[0].screenX;
+
+
+    handleArchiveSwipe();
+
+  },
+  {
+    passive: true
+  }
+);
+
+
+
+function handleArchiveSwipe() {
+
+  const difference =
+    archiveTouchStartX -
+    archiveTouchEndX;
+
+
+  /*
+    Ignore tiny movements
+  */
+
+  if (
+    Math.abs(difference) < 50
+  ) {
+    return;
+  }
+
+
+  /*
+    Swipe left
+  */
+
+  if (difference > 0) {
+
+    nextArchive();
+
+  }
+
+
+  /*
+    Swipe right
+  */
+
+  else {
+
+    previousArchive();
+
+  }
+
+}
+
+
+
+    /* ========================================
+       TIME-AWARE GREETING
+    ========================================= */
+
+    function updateGreeting() {
+
+      const hour =
+  Number(
+    new Intl.DateTimeFormat(
+      'en-GB',
+      {
+        timeZone: 'Africa/Johannesburg',
+        hour: '2-digit',
+        hour12: false
+      }
+    ).format(new Date())
+  );
+
+
+      const eyebrow =
+        document.getElementById('timeEyebrow');
+
+
+      const greeting =
+        document.getElementById('timeGreeting');
+
+
+
+      /* MORNING
+         05:00 - 11:59
+      */
+
+      if (hour >= 5 && hour < 12) {
+
+        eyebrow.textContent =
+          'GOOD MORNING';
+
+        greeting.textContent =
+          'The house is awake. Barely.';
+
+      }
+
+
+      /* AFTERNOON
+         12:00 - 16:59
+      */
+
+      else if (hour >= 12 && hour < 17) {
+
+        eyebrow.textContent =
+          'GOOD AFTERNOON';
+
+        greeting.textContent =
+          'Welcome in. Make yourself at home.';
+
+      }
+
+
+      /* EVENING
+         17:00 - 21:59
+      */
+
+      else if (hour >= 17 && hour < 22) {
+
+        eyebrow.textContent =
+          'GOOD EVENING';
+
+        greeting.textContent =
+          'Good music. Good people. The night starts here.';
+
+      }
+
+
+      /* AFTER HOURS
+         22:00 - 04:59
+      */
+
+      else {
+
+        eyebrow.textContent =
+          'AFTER HOURS';
+
+        greeting.textContent =
+          "You're here late. We respect that.";
+
+      }
+
+    }
+
+    /* ========================================
+   HOUSE XYLOO TIME THEME
+======================================== */
+
+function updateHouseTheme() {
+
+  const hour =
+    Number(
+      new Intl.DateTimeFormat(
+        'en-GB',
+        {
+          timeZone: 'Africa/Johannesburg',
+          hour: '2-digit',
+          hour12: false
+        }
+      ).format(new Date())
+    );
+
+
+  document.body.classList.remove(
+    'theme-morning',
+    'theme-day',
+    'theme-evening',
+    'theme-after-hours'
+  );
+
+
+  /* MORNING
+     05:00 - 11:59
+  */
+
+  if (hour >= 5 && hour < 12) {
+
+    document.body.classList.add(
+      'theme-morning'
+    );
+
+  }
+
+
+  /* DAY
+     12:00 - 16:59
+  */
+
+  else if (hour >= 12 && hour < 17) {
+
+    document.body.classList.add(
+      'theme-day'
+    );
+
+  }
+
+
+  /* EVENING
+     17:00 - 21:59
+  */
+
+  else if (hour >= 17 && hour < 22) {
+
+    document.body.classList.add(
+      'theme-evening'
+    );
+
+  }
+
+
+  /* AFTER HOURS
+     22:00 - 04:59
+  */
+
+  else {
+
+    document.body.classList.add(
+      'theme-after-hours'
+    );
+
+  }
+
+}
+
+    /* ========================================
+   HOUSE XYLOO LIVE CLOCK
+======================================== */
+
+function updateHouseClock() {
+
+  const now = new Date();
+
+
+  /* TIME */
+
+  const time =
+    new Intl.DateTimeFormat(
+      'en-GB',
+      {
+        timeZone: 'Africa/Johannesburg',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      }
+    ).format(now);
+
+
+  /* DATE */
+
+  const date =
+    new Intl.DateTimeFormat(
+      'en-GB',
+      {
+        timeZone: 'Africa/Johannesburg',
+        weekday: 'long',
+        day: '2-digit',
+        month: 'long'
+      }
+    )
+    .format(now)
+    .toUpperCase();
+
+
+  document
+    .getElementById('houseTime')
+    .textContent = time;
+
+
+  document
+    .getElementById('houseDate')
+    .textContent = date;
+
+}
+
+
+
+    /* ========================================
+       INTRO ANIMATION
+    ========================================= */
+
+    function runHouseIntro() {
+
+      const intro =
+        document.getElementById('houseIntro');
+
+
+      setTimeout(() => {
+
+        intro.classList.add('intro-exit');
+
+      }, 1700);
+
+
+      setTimeout(() => {
+
+        intro.remove();
+
+      }, 2600);
+
+    }
+
+
+
+    /* ========================================
+       INITIALISE HOUSE
+    ========================================= */
+
+    updateGreeting();
+
+updateHouseTheme();
+
+updateHouseClock();
+
+
+setInterval(
+  updateHouseClock,
+  1000
+);
+
+
+/*
+  Recheck the theme every minute.
+
+  This means somebody can literally
+  have the website open when House Xyloo
+  enters After Hours mode.
+*/
+
+setInterval(
+  () => {
+
+    updateGreeting();
+
+    updateHouseTheme();
+
+  },
+  60000
+);
+
+
+runHouseIntro();
+
+
+  </script>
+
+
+</body>
+
+</html>
