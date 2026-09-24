@@ -719,8 +719,411 @@
 
     </section>
 
+    <!-- ========================================
+     HOUSE EMERGENCY PROTOCOL
+========================================= -->
+
+<section class="emergency-section">
+
+  <p class="emergency-small">
+    HAVING A PROBLEM?
+  </p>
+
+  <button
+    class="emergency-trigger"
+    onclick="openEmergency()"
+  >
+    <span class="emergency-trigger-icon">
+      !
+    </span>
+
+    ACTIVATE HOUSE PROTOCOL
+
+    <span>
+      →
+    </span>
+  </button>
+
+  <p class="emergency-warning">
+    For House Xyloo emergencies only.
+  </p>
+
+</section>
+
 
   </main>
+
+  <!-- ========================================
+     HOUSE XYLOO EMERGENCY PROTOCOL
+========================================= -->
+
+<div
+  class="emergency-overlay"
+  id="emergencyOverlay"
+  aria-hidden="true"
+>
+
+  <div class="emergency-glow"></div>
+
+
+  <!-- TOP BAR -->
+
+  <div class="emergency-top">
+
+    <div class="emergency-status">
+
+      <span></span>
+
+      HOUSE PROTOCOL
+
+    </div>
+
+
+    <button
+      class="emergency-close"
+      onclick="closeEmergency()"
+      aria-label="Close emergency protocol"
+    >
+      ×
+    </button>
+
+  </div>
+
+
+  <!-- CONTENT -->
+
+  <div class="emergency-content">
+
+
+    <div class="emergency-roman">
+      VIII
+    </div>
+
+
+    <p class="emergency-eyebrow">
+      HOUSE XYLOO
+    </p>
+
+
+    <h2>
+      EMERGENCY<br>
+      <em>PROTOCOL</em>
+    </h2>
+
+
+    <p class="emergency-question">
+      What's the situation?
+    </p>
+
+
+
+    <!-- ACTIONS -->
+
+    <div class="emergency-grid">
+
+
+      <!-- FOOD -->
+
+      <button
+        class="protocol-card"
+        onclick="emergencyFood()"
+      >
+
+        <span class="protocol-icon">
+          🍕
+        </span>
+
+        <span class="protocol-text">
+
+          <small>
+            PROTOCOL 01
+          </small>
+
+          <strong>
+            WE NEED FOOD
+          </strong>
+
+          <span>
+            Find food nearby
+          </span>
+
+        </span>
+
+        <span class="protocol-arrow">
+          ↗
+        </span>
+
+      </button>
+
+
+
+      <!-- AUX -->
+
+      <button
+        class="protocol-card"
+        onclick="emergencyAux()"
+      >
+
+        <span class="protocol-icon">
+          🎵
+        </span>
+
+        <span class="protocol-text">
+
+          <small>
+            PROTOCOL 02
+          </small>
+
+          <strong>
+            THE AUX IS DEAD
+          </strong>
+
+          <span>
+            Deploy House Sound
+          </span>
+
+        </span>
+
+        <span class="protocol-arrow">
+          ↗
+        </span>
+
+      </button>
+
+
+
+      <!-- PLAYER -->
+
+      <button
+        class="protocol-card"
+        onclick="emergencyPlayer()"
+      >
+
+        <span class="protocol-icon">
+          🎮
+        </span>
+
+        <span class="protocol-text">
+
+          <small>
+            PROTOCOL 03
+          </small>
+
+          <strong>
+            WE NEED ANOTHER PLAYER
+          </strong>
+
+          <span>
+            Find Xyloo on Steam
+          </span>
+
+        </span>
+
+        <span class="protocol-arrow">
+          ↗
+        </span>
+
+      </button>
+
+
+
+      <!-- ICE -->
+
+      <button
+        class="protocol-card"
+        onclick="emergencyIce()"
+      >
+
+        <span class="protocol-icon">
+          🧊
+        </span>
+
+        <span class="protocol-text">
+
+          <small>
+            PROTOCOL 04
+          </small>
+
+          <strong>
+            WE'RE OUT OF ICE
+          </strong>
+
+          <span>
+            Locate emergency supplies
+          </span>
+
+        </span>
+
+        <span class="protocol-arrow">
+          ↗
+        </span>
+
+      </button>
+
+
+
+      <!-- BATTERY -->
+
+      <button
+        class="protocol-card"
+        onclick="emergencyBattery()"
+      >
+
+        <span class="protocol-icon">
+          🔋
+        </span>
+
+        <span class="protocol-text">
+
+          <small>
+            PROTOCOL 05
+          </small>
+
+          <strong>
+            MY PHONE IS DYING
+          </strong>
+
+          <span>
+            Locate a charger
+          </span>
+
+        </span>
+
+        <span class="protocol-arrow">
+          →
+        </span>
+
+      </button>
+
+
+
+      <!-- UBER -->
+
+      <button
+        class="protocol-card"
+        onclick="emergencyRide()"
+      >
+
+        <span class="protocol-icon">
+          🚕
+        </span>
+
+        <span class="protocol-text">
+
+          <small>
+            PROTOCOL 06
+          </small>
+
+          <strong>
+            GET ME HOME
+          </strong>
+
+          <span>
+            Call extraction
+          </span>
+
+        </span>
+
+        <span class="protocol-arrow">
+          ↗
+        </span>
+
+      </button>
+
+
+
+      <!-- POOR DECISIONS -->
+
+      <button
+        class="protocol-card protocol-danger"
+        onclick="emergencyDecisions()"
+      >
+
+        <span class="protocol-icon">
+          😭
+        </span>
+
+        <span class="protocol-text">
+
+          <small>
+            PROTOCOL 07
+          </small>
+
+          <strong>
+            I'VE MADE POOR DECISIONS
+          </strong>
+
+          <span>
+            Request emotional support
+          </span>
+
+        </span>
+
+        <span class="protocol-arrow">
+          →
+        </span>
+
+      </button>
+
+
+    </div>
+
+
+    <button
+      class="protocol-cancel"
+      onclick="closeEmergency()"
+    >
+      CANCEL PROTOCOL
+    </button>
+
+
+  </div>
+
+</div>
+
+<!-- ========================================
+     PROTOCOL RESPONSE
+========================================= -->
+
+<div
+  class="protocol-response"
+  id="protocolResponse"
+>
+
+  <div class="protocol-response-card">
+
+    <div
+      class="protocol-response-icon"
+      id="protocolResponseIcon"
+    >
+      VIII
+    </div>
+
+
+    <p>
+      HOUSE XYLOO PROTOCOL
+    </p>
+
+
+    <h3 id="protocolResponseTitle">
+      PROTOCOL ACTIVATED
+    </h3>
+
+
+    <span id="protocolResponseMessage">
+      Situation handled.
+    </span>
+
+
+    <button
+      onclick="closeProtocolResponse()"
+    >
+      UNDERSTOOD
+    </button>
+
+  </div>
+
+</div>
 
   <!-- ========================================
      FULLSCREEN ARCHIVE VIEWER
@@ -1285,6 +1688,419 @@ function handleArchiveSwipe() {
       }
 
     }
+
+    /* ========================================
+   HOUSE XYLOO EMERGENCY PROTOCOL
+======================================== */
+
+function openEmergency() {
+
+  const overlay =
+    document.getElementById(
+      'emergencyOverlay'
+    );
+
+
+  overlay.classList.add(
+    'active'
+  );
+
+
+  overlay.setAttribute(
+    'aria-hidden',
+    'false'
+  );
+
+
+  document.body.classList.add(
+    'emergency-open'
+  );
+
+}
+
+
+
+function closeEmergency() {
+
+  const overlay =
+    document.getElementById(
+      'emergencyOverlay'
+    );
+
+
+  overlay.classList.remove(
+    'active'
+  );
+
+
+  overlay.setAttribute(
+    'aria-hidden',
+    'true'
+  );
+
+
+  document.body.classList.remove(
+    'emergency-open'
+  );
+
+}
+
+
+
+/* ========================================
+   PROTOCOL ACTIONS
+======================================== */
+
+
+/* ========================================
+   FOOD
+======================================== */
+
+function emergencyFood() {
+
+  activateProtocol(
+    '🍕',
+    'FOOD PROTOCOL ACTIVATED',
+    'Locating emergency food supplies...',
+    'food',
+    'https://www.google.com/maps/search/food+near+me'
+  );
+
+}
+
+
+/* ========================================
+   AUX
+======================================== */
+
+function emergencyAux() {
+
+  activateProtocol(
+    '🎵',
+    'AUX PROTOCOL ACTIVATED',
+    'Deploying the House Xyloo soundtrack...',
+    'aux',
+    'https://music.apple.com/za/playlist/house-xyloo-viii-playlist/pl.u-LdbqEgdF2LjmGgJ'
+  );
+
+}
+
+
+/* ========================================
+   ANOTHER PLAYER
+======================================== */
+
+function emergencyPlayer() {
+
+  activateProtocol(
+    '🎮',
+    'PLAYER PROTOCOL ACTIVATED',
+    'Searching for reinforcements...',
+    'gaming',
+    'https://steamcommunity.com/id/Xyloo18k/'
+  );
+
+}
+
+
+/* ========================================
+   ICE
+======================================== */
+
+function emergencyIce() {
+
+  activateProtocol(
+    '🧊',
+    'ICE PROTOCOL ACTIVATED',
+    'Locating emergency supplies...',
+    'ice',
+    'https://www.google.com/maps/search/convenience+store+near+me'
+  );
+
+}
+
+
+/* ========================================
+   PHONE BATTERY
+======================================== */
+
+function emergencyBattery() {
+
+  showProtocolResponse(
+    '🔋',
+    'CHARGER REQUIRED',
+    'Ask Edwin for the House Xyloo charging station.',
+    'battery'
+  );
+
+}
+
+
+/* ========================================
+   GET ME HOME
+======================================== */
+
+function emergencyRide() {
+
+  activateProtocol(
+    '🚕',
+    'EXTRACTION REQUESTED',
+    'Preparing your escape route...',
+    'ride',
+    'https://m.uber.com/'
+  );
+
+}
+
+
+/* ========================================
+   POOR DECISIONS
+======================================== */
+
+function emergencyDecisions() {
+
+  const responses = [
+
+    'House Xyloo acknowledges your poor decision. Unfortunately, it cannot be undone.',
+
+    'Situation critical. Drink some water and reconsider your life choices.',
+
+    'Protocol VIII recommends pretending this never happened.',
+
+    'We have reviewed the situation. Yeah... that was probably a bad idea.',
+
+    'House Xyloo cannot save you from yourself.',
+
+    'Emergency assessment complete. You cooked yourself 😭'
+
+  ];
+
+
+  const response =
+    responses[
+      Math.floor(
+        Math.random() *
+        responses.length
+      )
+    ];
+
+
+  showProtocolResponse(
+    '😭',
+    'DECISION REVIEW COMPLETE',
+    response,
+    'danger'
+  );
+
+}
+
+
+
+function activateProtocol(
+  icon,
+  title,
+  message,
+  theme,
+  url
+) {
+
+  /*
+    Show House Xyloo protocol screen
+  */
+
+  showProtocolResponse(
+    icon,
+    title,
+    message,
+    theme,
+    true
+  );
+
+
+  /*
+    Let the animation play first
+  */
+
+  setTimeout(() => {
+
+    /*
+      Redirect the CURRENT tab.
+
+      This guarantees the user actually
+      sees the protocol animation first.
+    */
+
+    window.location.href =
+      url;
+
+  }, 1400);
+
+}
+
+
+
+/* ========================================
+   PROTOCOL RESPONSE
+======================================== */
+
+function showProtocolResponse(
+  icon,
+  title,
+  message,
+  theme,
+  redirecting = false
+) {
+
+  const response =
+    document.getElementById(
+      'protocolResponse'
+    );
+
+
+  const button =
+    response.querySelector(
+      '.protocol-response-card button'
+    );
+
+
+  document
+    .getElementById(
+      'protocolResponseIcon'
+    )
+    .textContent =
+    icon;
+
+
+  document
+    .getElementById(
+      'protocolResponseTitle'
+    )
+    .textContent =
+    title;
+
+
+  document
+    .getElementById(
+      'protocolResponseMessage'
+    )
+    .textContent =
+    message;
+
+
+  /*
+    Reset previous theme
+  */
+
+  response.className =
+    'protocol-response';
+
+
+  /*
+    Apply new theme
+  */
+
+  response.classList.add(
+    `protocol-${theme}`
+  );
+
+
+  /*
+    Redirecting protocols don't need
+    the UNDERSTOOD button.
+  */
+
+  if (redirecting) {
+
+    button.style.display =
+      'none';
+
+  }
+
+  else {
+
+    button.style.display =
+      '';
+
+  }
+
+
+  /*
+    Trigger animation
+  */
+
+  requestAnimationFrame(() => {
+
+    response.classList.add(
+      'active'
+    );
+
+  });
+
+}
+
+
+
+/* ========================================
+   CLOSE RESPONSE
+======================================== */
+
+function closeProtocolResponse() {
+
+  const response =
+    document.getElementById(
+      'protocolResponse'
+    );
+
+
+  response.classList.remove(
+    'active'
+  );
+
+
+  /*
+    Wait for fade-out before removing
+    the protocol theme.
+  */
+
+  setTimeout(() => {
+
+    if (
+      !response.classList.contains(
+        'active'
+      )
+    ) {
+
+      response.className =
+        'protocol-response';
+
+    }
+
+  }, 400);
+
+}
+
+
+
+/* ========================================
+   ESCAPE KEY
+======================================== */
+
+document.addEventListener(
+  'keydown',
+  function (event) {
+
+    if (
+      event.key === 'Escape'
+    ) {
+
+      closeProtocolResponse();
+
+      closeEmergency();
+
+    }
+
+  }
+);
 
     /* ========================================
    HOUSE XYLOO TIME THEME
