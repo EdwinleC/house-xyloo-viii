@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("253035d5-36f5-454c-a225-c83deeb7953a")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("HouseXyloo.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+805af6c50357a56f04de92187892426b6da1aaf1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2048f22439598d21ee628ebd4d085ca6a19c3ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("HouseXyloo.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HouseXyloo.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

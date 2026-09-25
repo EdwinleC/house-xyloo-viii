@@ -1,6 +1,7 @@
 using HouseXyloo.Api.Models;
 using HouseXyloo.Api.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HouseXyloo.Api.Controllers;
 
@@ -23,6 +24,7 @@ public class HouseController : ControllerBase
         return Ok(status);
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpPut("status")]
     public async Task<ActionResult<HouseStatus>> UpdateStatus(
         [FromBody] HouseStatus status)

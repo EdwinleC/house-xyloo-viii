@@ -12,4 +12,6 @@ public class HouseXylooDbContext : DbContext
     }
 
     public DbSet<HouseStatus> HouseStatuses { get; set; }
+
+    public DbSet<AdminUser> AdminUsers { get; set; }
 }

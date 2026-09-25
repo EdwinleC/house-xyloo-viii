@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resident Access | House Xyloo VIII</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<!-- LOGIN -->
+<main id="loginView" class="login-view">
+
+    <div class="login-card">
+
+        <div class="mark">VIII</div>
+
+        <p class="eyebrow">HOUSE XYLOO</p>
+
+        <h1>Resident<br>Access.</h1>
+
+        <p class="subtitle">
+            Control Centre authentication required.
+        </p>
+
+        <form id="loginForm">
+
+            <label>
+                EMAIL
+                <input
+                    id="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                >
+            </label>
+
+            <label>
+                PASSWORD
+                <input
+                    id="password"
+                    type="password"
+                    autocomplete="current-password"
+                    required
+                >
+            </label>
+
+            <button id="loginButton" type="submit">
+                ENTER HOUSE
+            </button>
+
+            <p id="loginError" class="error-message"></p>
+
+        </form>
+
+    </div>
+
+</main>
+
+
+<!-- CONTROL CENTRE -->
+<main id="dashboardView" class="dashboard hidden">
+
+    <header class="topbar">
+
+        <div class="mark">VIII</div>
+
+        <div class="status-indicator">
+            <span id="statusDot" class="status-dot"></span>
+            <span id="onlineText">ONLINE</span>
+        </div>
+
+    </header>
+
+
+    <section class="hero">
+
+        <p class="eyebrow">HOUSE XYLOO</p>
+
+        <h1>Control<br>Centre.</h1>
+
+        <p class="subtitle">
+            Welcome home, Edwin.
+        </p>
+
+    </section>
+
+
+    <section class="control-card">
+
+        <div class="section-heading">
+            <span>HOUSE MODE</span>
+            <span id="currentMode" class="purple-text">
+                CHILL
+            </span>
+        </div>
+
+        <div class="mode-grid">
+
+            <button class="mode-button" data-mode="Chill">
+                ☁️
+                <span>CHILL</span>
+            </button>
+
+            <button class="mode-button" data-mode="Gaming">
+                🎮
+                <span>GAMING</span>
+            </button>
+
+            <button class="mode-button" data-mode="Party">
+                ⚡
+                <span>PARTY</span>
+            </button>
+
+            <button class="mode-button" data-mode="AfterHours">
+                🌙
+                <span>AFTER HOURS</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="control-card">
+
+        <div class="section-heading">
+            <span>HOUSE STATUS</span>
+        </div>
+
+        <div class="online-control">
+
+            <div>
+                <strong>House Online</strong>
+                <p>Show House Xyloo as active.</p>
+            </div>
+
+            <label class="switch">
+                <input id="onlineToggle" type="checkbox">
+                <span class="slider"></span>
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <section class="control-card">
+
+        <div class="section-heading">
+            <span>GUESTS</span>
+        </div>
+
+        <div class="guest-control">
+
+            <button id="decreaseGuests">−</button>
+
+            <strong id="guestCount">0</strong>
+
+            <button id="increaseGuests">+</button>
+
+        </div>
+
+    </section>
+
+
+    <section class="control-card">
+
+        <div class="section-heading">
+            <span>HOUSE MESSAGE</span>
+        </div>
+
+        <textarea
+            id="houseMessage"
+            maxlength="150"
+            placeholder="What's happening at House Xyloo?"
+        ></textarea>
+
+        <div class="character-count">
+            <span id="messageLength">0</span>/150
+        </div>
+
+    </section>
+
+
+    <button id="saveButton" class="save-button">
+        SAVE CHANGES
+    </button>
+
+    <p id="saveMessage" class="save-message"></p>
+
+
+    <footer>
+
+        <span id="lastUpdated">
+            Last updated —
+        </span>
+
+        <button id="logoutButton">
+            LOG OUT
+        </button>
+
+    </footer>
+
+</main>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
