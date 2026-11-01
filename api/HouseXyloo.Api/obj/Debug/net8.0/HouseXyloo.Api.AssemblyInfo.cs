@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HouseXyloo.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9a708edfffe65c7efd41d9df90714ee419f655c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dec0e20a1fdb4bafc987a72586cef03ceefec11")]
 [assembly: System.Reflection.AssemblyProductAttribute("HouseXyloo.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HouseXyloo.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
